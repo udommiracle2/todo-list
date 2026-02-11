@@ -26,23 +26,30 @@ popup()
 
 function inputTask() {
     const input = document.getElementById("todo-input");
-    const inputValue = input.value;
     const todo = document.getElementById("todo-con")
     const btn = document.getElementById("done-btn")
-
-    if (inputValue === "") {
-        return   //todo.textContent = "Please Add a Task";
-    }
-    else {
+    
+    btn.addEventListener("click", () => {
+        const inputValue = input.value.trim();
+        if (inputValue === "") {
+            return
+        }
         const list = document.createElement("div")
 
         list.innerHTML = `
             <span>${inputValue}</span>
-            <button class="delete-btn" onclick="this.parentElement.remove()">×</button>
+            <button class="delete-btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
         `;
+
+        list.querySelector(".delete-btn").addEventListener("click", () => {
+            list.remove();
+        })
+
         todo.appendChild(list);
 
         input.value = "";
     }
-}
+)}
 inputTask();
