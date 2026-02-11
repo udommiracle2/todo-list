@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+    <header class="section">
+        <p> To-Do List</p>
+        <i class="fa-solid fa-sun"></i>
+    </header>
+
+    <ul class="filter-con section" id="filter-con">
+        <li id="filter" class="filter">All <span>0</span></li>
+        <li>Pending <span>0</span></li>
+        <li>Completed <span>0</span></li>
+    </ul>
+
+    <div class="task section" id="id">
+        <p id="currentDate"></p>
+        <span id="open-btn"><i class="fa-solid fa-plus"></i> New Task</span>
+    </div>
+
+    <div class="pop-up section" id="pop-up">
+        <form action="">
+            <input type="text" name="" id="todo-input" placeholder="Add a Task"><br><br>
+            <button type="button" id="done-btn">Done</button>
+        </form>
+
+        <i class="fa-solid fa-x" id="close-btn"></i>
+    </div>
+
+    <div class="todo-con" id="todo-con">
+        
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

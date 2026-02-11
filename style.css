@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: rgb(250, 250, 200);
+}
+:root{
+    --color: #ffff;
+    --background: rgb(106, 106, 206);
+    --black-color: rgb(55, 54, 54);
+    --btn: rgb(21, 4, 68);
+}
+
+.section {
+    margin: 40px;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header p {
+    font-size: 30px;
+    font-family: "Rubik Dirt", system-ui;
+}
+
+header i {
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filter-con {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-con li {
+    margin-left: 30px;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-con li span {
+    background: var(--background);
+    padding: 2px 4px;
+    border-radius: 50px;
+    color: var(--color);
+}
+
+.filter-con li:hover {
+    color: var(--background);
+}
+
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.task p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.task span{
+    background: var(--background);
+    color: var(--color);
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+.pop-up{
+    background: var(--background);
+    padding: 15px;
+    position: fixed;
+    transition: all 0.8s ease-in-out;
+    top: -200px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+.pop-up.open{
+    top: 230px;
+    opacity: 1;
+    z-index: 999;
+}
+
+.pop-up form{
+    width: 90%;
+    margin-top: 8px;
+}
+
+.pop-up form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.pop-up form button{
+    background: var(--btn);
+    color: var(--color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-x{
+    color: var(--color);
+    background: red;
+    padding: 1px;
+    font-size: 22px;
+    border-radius: 50px;
+    margin-top: -60px;
+    margin-left: 20px;
+    cursor: pointer;
+}
