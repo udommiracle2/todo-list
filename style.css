@@ -2,19 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     background: var(--body);
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.dark-mode{
+.dark-mode {
     --color: #ffffff;
     --background: #C69874;
     --black-color: rgb(55, 54, 54);
@@ -22,11 +22,11 @@ body{
     --body: #2b2929;
 }
 
-.dark-mode i{
+.dark-mode i {
     color: var(--color);
 }
 
-.dark-mode .section{
+.dark-mode .section {
     color: var(--color);
 }
 
@@ -39,7 +39,7 @@ body{
 }
 
 
-:root{
+:root {
     --color: #101010;
     --background: #C69874;
     --black-color: rgb(55, 54, 54);
@@ -68,7 +68,7 @@ header i {
     text-align: center;
     align-items: center;
     cursor: pointer;
-    
+
 }
 
 /* .filter-con {
@@ -119,12 +119,12 @@ header i {
     border: 1px solid #919191;
 }
 
-.task p{
+.task p {
     font-size: 17px;
     font-weight: 500;
 }
 
-.task span{
+.task span {
     background: var(--glass);
     color: var(--color);
     border-radius: 8px;
@@ -135,12 +135,12 @@ header i {
 }
 
 
-.task span:hover{
+.task span:hover {
     background: #827C90;
     color: var(--color);
 }
 
-.pop-up{
+.pop-up {
     background: var(--glass);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -162,18 +162,18 @@ header i {
     border-radius: 8px;
 }
 
-.pop-up.open{
+.pop-up.open {
     top: 230px;
     opacity: 1;
     z-index: 999;
 }
 
-.pop-up form{
+.pop-up form {
     width: 90%;
     margin-top: 8px;
 }
 
-.pop-up form input{
+.pop-up form input {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
@@ -181,7 +181,7 @@ header i {
     outline: none;
 }
 
-.pop-up form button{
+.pop-up form button {
     background: var(--glass);
     color: var(--color);
     width: 100%;
@@ -194,21 +194,21 @@ header i {
     transition: 0.3s ease;
 }
 
-.pop-up form button:hover{
+.pop-up form button:hover {
     background: #827C90;
     color: var(--color);
 }
 
 
 
-.fa-trash{
+.fa-trash {
     color: var(--btn);
     font-size: 18px;
     cursor: pointer;
 }
 
 
-.todo-con{
+.todo-con {
     display: block;
     justify-content: space-between;
     color: var(--color);
@@ -228,26 +228,56 @@ header i {
     border: 1px solid #919191;
 }
 
-#warning{
+#warning {
     color: red;
     display: none;
     font-size: 15px;
 }
 
-.delete-btn{
+.delete-btn {
     border: none;
     background: none;
 }
 
-.fa-x{
+.fa-x {
     cursor: pointer;
 }
 
-.delete-btn .fa-x{
+.delete-btn .fa-x {
     margin-left: 0px;
     cursor: pointer;
 }
 
-.check{
+.check {
     border-radius: 50%;
+}
+
+
+@media (max-width: 550px) {
+    header p, #switch{
+        font-size: 22px;
+    }
+    
+    .task, .pop-up, .todo-con, #currentDate, #todo-input, #done-btn{
+        font-size: 13px;
+    }
+
+    .task{
+        display: block;
+    }
+
+    #currentDate{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .todo-con{
+        width: 100%;
+    }
+
+    .pop-up{
+        width: 90%;
+    }
+
 }
