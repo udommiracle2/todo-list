@@ -26,20 +26,20 @@ setInterval(timeDate, 1000)
 timeDate();
 
 
-function activeBtn(){
-    const btns = document.querySelectorAll(".filter");
+// function activeBtn(){
+//     const btns = document.querySelectorAll(".filter");
     
-    btns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            document.querySelector(".active")?.classList.remove("active");
-            btn.classList.add("active");
-        })
-    })
+//     btns.forEach(btn => {
+//         btn.addEventListener("click", () => {
+//             document.querySelector(".active")?.classList.remove("active");
+//             btn.classList.add("active");
+//         })
+//     })
 
 
 
-}
-activeBtn()
+// }
+// activeBtn()
 
 
 
